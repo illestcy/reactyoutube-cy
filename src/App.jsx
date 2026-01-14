@@ -13,6 +13,12 @@ import disLike from './assets/dislike.png'
 import shareButton from './assets/share.png'
 import downloadButton from './assets/downloads.png'
 import clipButton from './assets/scissors.png'
+import suggest1 from './assets/nightcity.jpg'
+import optionsIcon from './assets/3dots.png'
+import suggest2 from './assets/beyond.jpg'
+import suggest3 from './assets/purge.jpg'
+import suggest4 from './assets/godarmor.webp'
+import suggest5 from './assets/doometernal.jpg'
 
 
 
@@ -31,31 +37,31 @@ export default function YouTubeWatchTemplate() {
           <span className="font-semibold text-lg">YouTube</span>
         </div>
 
-        <div className="flex items-center gap-2 w-full max-w-xl">
-          <div className="flex-1 h-9 bg-neutral-800 rounded-l-full flex items-center px-3" >
-            <h3>Search</h3>
-          </div>
-          <div className="w-12 h-9 bg-neutral-700 rounded-r-full flex items-center justify-center">
-           <img
-             src={searchIcon}
-             alt="Search"
-             className="w-8 h-8"
-            />
+        <div className="flex items-center w-full max-w-xl gap-2">
+           
+           <div className="flex flex-1 h-9 rounded-full overflow-hidden bg-neutral-800">
+             <input
+               type="text"
+               placeholder="Search"
+               className="flex-1 px-3 bg-neutral-800 text-white focus:outline-none"
+             />
+             <div className="w-12 flex items-center justify-center bg-neutral-700">
+               <img src={searchIcon} alt="Search" className="w-6 h-6" />
+             </div>
            </div>
-          <div className="w-9 h-9 bg-neutral-700 rounded-full flex items-center justify-center">
-            <img
-             src={micIcon}
-             alt="Microphone"
-             className="w-8 h-8"
-            />
+
+           
+           <div className="w-9 h-9 bg-neutral-700 rounded-full flex items-center justify-center">
+             <img src={micIcon} alt="Microphone" className="w-6 h-6" />
           </div>
-        </div>
+         </div>
+         
 
         <div className="flex items-center gap-4">
           <div className="w-25 h-8 bg-neutral-700 rounded-full flex items-center px-3 gap-2">
             <img
              src={plusIcon}
-             alt="Microphone"
+             alt="Create"
              className="w-5 h-5"
             />
             <h4>Create</h4>
@@ -176,14 +182,95 @@ export default function YouTubeWatchTemplate() {
           </div>
 
          
-          <div className="space-y-4">
+          <div className="space-y-5">
             
-              <div className="flex gap-3">
-                <div className="w-40 aspect-video bg-neutral-800 rounded-lg" />
+              <div className="flex gap-4">
+                <div className="w-40 aspect-video bg-neutral-800 rounded-lg overflow-hidden">
+                  <img src={suggest1} alt="Suggested Video 1" className='' />
+                </div>
                 <div className="flex-1">
-                  <div className="h-4 bg-neutral-700 rounded mb-2" />
-                  <div className="h-4 bg-neutral-700 rounded w-3/4 mb-2" />
-                  <div className="h-3 bg-neutral-800 rounded w-1/2" />
+                  <div className="h-4 mb-2 flex justify-between items-center">
+                    <h4>NightCity is the Best City.</h4>
+                    <img src={optionsIcon} alt="3 dots" className='h-5 w-5' />
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">Cyberpunk</h6>
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">20M • 69 years ago</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-40 aspect-video bg-neutral-800 rounded-lg overflow-hidden">
+                  <img src={suggest2} alt="Suggested Video 2" className='' />
+                </div>
+                <div className="flex-1">
+                  <div className="h-4 mb-2 flex justify-between items-center">
+                    <h4>Gotham City is Better.</h4>
+                    <img src={optionsIcon} alt="3 dots" className='h-5 w-5' />
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">BatCave</h6>
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">456M • 3 weeks ago</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-40 aspect-video bg-neutral-800 rounded-lg overflow-hidden">
+                  <img src={suggest3} alt="Suggested Video 3" className='' />
+                </div>
+                <div className="flex-1">
+                  <div className="h-4 mb-2 flex justify-between items-center">
+                    <h4>Purge Planet Perhaps ?</h4>
+                    <img src={optionsIcon} alt="3 dots" className='h-5 w-5' />
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">Rick & Morty</h6>
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">78M • 1 week ago</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-40 aspect-video bg-neutral-800 rounded-lg overflow-hidden">
+                  <img src={suggest4} alt="Suggested Video 4" className='' />
+                </div>
+                <div className="flex-1">
+                  <div className="h-4 mb-2 flex justify-between items-center">
+                    <h4>DC Universe is Peak.</h4>
+                    <img src={optionsIcon} alt="3 dots" className='h-5 w-5' />
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">Morbius Chair</h6>
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">127k • 4 weeks ago</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-40 aspect-video bg-neutral-800 rounded-lg overflow-hidden">
+                  <img src={suggest5} alt="Suggested Video 5" className='' />
+                </div>
+                <div className="flex-1">
+                  <div className="h-4 mb-2 flex justify-between items-center">
+                    <h4>Doom Universe #1 </h4>
+                    <img src={optionsIcon} alt="3 dots" className='h-5 w-5' />
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">Iconic Shotgun</h6>
+                  </div>
+                  <div className="h-4 mb-2" >
+                  <h6 className=" text-sm text-gray-500/90">400B • 3 years ago</h6>
+                  </div>
                 </div>
               </div>
             
